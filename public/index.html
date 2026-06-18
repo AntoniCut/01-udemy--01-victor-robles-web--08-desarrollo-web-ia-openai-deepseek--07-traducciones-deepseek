@@ -1,0 +1,155 @@
+<!--  
+    *  ---------------------------------------------  *
+    *  -----  /index.html  /public/index.html  -----  *
+    *  ---------------------------------------------  *
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="./assets/img/translator-icon.png" />
+    <title> Chat Traducciones DeepSeek </title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/main.js" defer> </script>
+
+
+</head>
+
+<body>
+
+    <div class="layout">
+
+
+        <header class="layout__header-project">
+
+            <h1 class="header__title-project">
+                Desarrollo Web con IA
+            </h1>
+
+            <div class="header__tech-stack">
+                
+                <div class="tech-item">
+                    <img src="./assets/img/openai-platform.svg" alt="OpenAI" class="tech-icon">
+                    <span class="tech-name"> OpenAI </span>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="./assets/img/deepseek.png" alt="DeepSeek" class="tech-icon">
+                    <span class="tech-name"> DeepSeek </span>
+                </div>
+
+                <div class="tech-item tech-item--separator">
+                    <!--  -----  Separador  -----  -->  
+                </div>
+                
+                <div class="tech-item">
+                    <img src="./assets/img/javascript.svg" alt="JavaScript" class="tech-icon">
+                    <span class="tech-name"> JavaScript </span>
+                </div>
+                
+                <div class="tech-item">
+                    <img src="./assets/img/nodejs-icon.ico" alt="NodeJS" class="tech-icon">
+                    <span class="tech-name"> NodeJS </span>
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assets/img/express.png" alt="Express" class="tech-icon">
+                    <span class="tech-name"> Express </span>
+                </div>
+
+                <div class="tech-item tech-item--separator">
+                    <!--  -----  Separador  -----  -->  
+                </div>
+
+                <div class="tech-item">
+                    <img src="./assets/img/github.svg" alt="GitHub" class="tech-icon">
+                    <span class="tech-name"> GitHub </span>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!--  -----  Layout del Chat  -----  -->
+        <div class="layout__chat">
+
+            <!--  ----  Header  -----   -->
+            <header class="chat__header">
+
+                <!--  -----  Ícono del Header  -----  -->
+                <img 
+                    class="header__icon" 
+                    src="./assets/img/translator-icon.png" 
+                    alt="Ícono de Traductor"
+                >
+
+                <!--  -----  Título del Header  -----  -->
+                <h2 class="header__title"> 
+                    Chat Traducciones DeepSeek
+                </h2>
+
+            </header>
+
+
+            <!--  ----  Main  -----   -->
+            <main class="chat__main">
+
+                <!--  -----  Mensajes del Chat  -----  -->
+                <div class="chat__messages">
+                    <!--  *****  Cargar los Mensajes del usuario  *****  -->
+                    <!--  *****  Cargar los Mensajes que genera la IA  *****  -->
+                </div>
+
+                <!--  -----  Inputs del Chat  -----  -->
+                <div class="chat__input-group">
+
+                    <!--  -----  Input de Texto con textarea -----  -->
+                    <textarea 
+                        id="inputText" 
+                        class="chat__input-text" 
+                        placeholder="Que quieres traducir ahora?"
+                    ></textarea>
+
+
+                    <!--  -----  Contenedor de Inputs  -----  -->
+                    <div class="chat__inputs">
+
+                        <!--  -----  Select de Idioma  -----  -->
+                        <select class="chat__select" id="targetLang">
+                            <option value="ingles"> Ingles </option>
+                            <option value="español"> Español </option>
+                            <option value="frances"> Francés </option>
+                            <option value="aleman"> Alemán </option>
+                            <option value="italiano"> Italiano </option>
+                            <option value="portugues"> Portugués </option>
+                            <option value="chino"> Chino </option>
+                            <option value="japones"> Japonés </option>
+                            <option value="ruso"> Ruso </option>
+                        </select>
+
+                        <!--  -----  Botón de Traducción  -----  -->
+                        <button class="chat__button" id="translateButton"> Traducir </button>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
